@@ -1,0 +1,170 @@
+:root {
+    --green: #8bc34a;
+    --transition: .3s ease;
+}
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-size: 16px;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+}
+.btn-dark {
+    background: black;
+    padding: 15px 40px;
+    border-radius: 0;
+}
+.btn-dark:hover {
+    background: var(--green);
+    transition: var(--transition);
+}
+.underline {
+    border: 1px solid var(--green);
+    width: 20%;
+    /* margin: 20px auto 10px auto; */
+}
+/* nav */
+.navbar-brand {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+}
+
+.navbar-brand:hover {
+    color: var(--green) !important;
+    transition: var(--transition);
+}
+.nav-item {
+    text-transform: uppercase;
+
+}
+.nav-item a:hover {
+    color: var(--green) !important;
+    transition: var(--transition);
+}
+.navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
+    color: var(--green) !important;
+}
+/* slider */
+.carousel-caption {
+    bottom: 35%;
+}
+.carousel-caption p {
+    background: var(--green);
+    display: inline;
+    padding: 10px;
+    text-transform: uppercase;
+}
+/* welcom */
+.welcome h2 {
+    font-size: 3rem;
+}
+
+.welcome h2 span {
+    color: var(--green);
+    font-style: italic;
+    font-weight: bold;
+}
+.welcome a {
+    color: var(--green);
+    text-transform: uppercase;
+}
+.welcome h3 {
+    color: var(--green);
+}
+.welcome .col-md-4:last-child span {
+    font-weight: bold;
+}
+/* featuredServices */
+.featuredServices i {
+    color: var(--green);
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+/* newHairsyle */
+.newHairsyle .col-md-5 {
+    background:white;
+    height: 50vh;
+    margin-left: -80px;
+}
+/* experience */
+.experience {
+    background-image: linear-gradient(rgba(0,0,0, .5),rgba(0,0,0, .5)),url(img/experience.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 0;
+    border-radius: 0 !important;
+    height: 70vh;
+}
+/* footer */
+footer {
+    color: gray;
+}
+footer a {
+    color: gray;
+}
+footer a:hover {
+    color: var(--green);
+    transition: var(--transition);
+}
+footer .col-md-2 .pb {
+    margin-top: 35px;
+}
+footer button {
+    position: relative;
+    top: -3px;
+    left: -5px;
+    border-radius: 0 !important;
+    border: none !important;
+    background: var(--green) !important;
+    color: black !important;
+}
+footer button:hover {
+    background: black
+    !important;
+    color: white !important;
+}
+footer i {
+    color: var(--green);
+}
+footer i:hover {
+    color: black;
+    transition: var(--transition);
+}
+/* 
+RESPONSIVE
+*/
+@media(max-width: 768px){
+    .welcome h2 {
+        font-size: 2rem;
+    }   
+    .welcome img {
+        margin: 30px 0;
+    }
+    .display-3 {
+        font-size: 2rem;
+    }
+    .featuredServices .col-md-4 {
+        margin-bottom: 30px;
+    }
+    .newHairsyle .col-md-5 {
+        margin-left: 0px;
+    }
+    .display-4 {
+        font-size: 2rem;
+    }
+    nav {
+        position: fixed !important;
+        top: 0;
+        left: 0;
+        z-index: 999;
+        background: white;
+    }
+    #carouselExampleCaptions {
+        margin-top: 75px;
+    }
+}
